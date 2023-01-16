@@ -2,11 +2,51 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <style>
+            .search {
+                padding: 10px;
+                position: relative;
+                text-align: center;
+                margin: 200px;
+                flex-wrap: wrap;
+                font-size: small;
+                border: 1px solid black;
+                background-image: url("images/basic-search-v2.jpg");
+                height: 50px;
+                width: 55%;
+                border-radius: 10px;
+            }
+            #text {
+                color: rgb(39, 112, 207);
+                font-weight: 550;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+            #submit {
+                background-color: white;
+                border: 1px solid black;
+                padding: 3px;
+                margin: 5px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+            #submit:hover {
+                background-color: lightcyan;
+                border-color: whitesmoke;
+                color: rgb(39, 112, 207);
+            }
+        </style>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div>
+            <form class="search" action="https://google.com/search">
+                <div>
+                    <input id="text" type="text" name="q">
+                </div>
+                <div>
+                    <input id="submit" type="submit" value="Google Search">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
