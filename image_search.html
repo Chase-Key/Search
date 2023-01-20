@@ -4,7 +4,7 @@
         <title>Search</title>
         <style>
             .search {
-                padding: 5px;
+                padding: 10px;
                 position: relative;
                 text-align: center;
                 margin: auto;
@@ -26,11 +26,11 @@
                 color: black;
                 font-weight: 495;
                 font-size: medium;
-                height: 25px;
                 width: 300px;
+                height: 25px;
+                font-family: system-ui;
                 border: 0;
                 outline: none;
-                font-family: system-ui;
             }
             #submit {
                 background-color: rgb(253, 253, 253);
@@ -38,6 +38,7 @@
                 outline: none;
                 padding: 3px;
                 margin: 12px;
+                border-radius: 8px;
                 font-family: system-ui;
             }
             #submit:hover {
@@ -66,8 +67,8 @@
                 text-decoration: underline;
             }
             .geeks {
-                width: 460px;
-                height: 140px;
+                width: 440px;
+                height: 135px;
                 display: flex;
                 margin: auto;
             }
@@ -83,20 +84,19 @@
     <body>
         
         <div class="pages">
-            <a class="image" href="image_search.html">Images</a> &nbsp &nbsp
-            <a class="image" href="advanced.html">Advanced</a>
+            <a class="image" href="index.html">Basic Search</a> &nbsp &nbsp
+            <a class="image" href="advanced.html">Advanced Search</a>
         </div>
         <div>
             <div class="geeks">
-                <img id="Imag" src="images/google2.jpg" alt="Geeks Image" />
+                <img id="Imag" src="images/google2-imgs.jpg" alt="Geeks Image" />
             </div>
-            <form class="search" action="https://google.com/search">
+            <form class="search" action="https://www.google.com/images?" method="GET" role="search">
                 <div class="text-div">
-                    <input id="text" placeholder="Search Google or type a URL" type="text" name="q">
+                    <input id="text" type="text" placeholder="Search Google or type a URL" name="as_q">
                 </div>
                 <div>
-                    <input id="submit" type="submit" name="btnK" value="Google Search" class="button">
-                    <input id="submit" type="submit" name="btnI" value="I am feeling Lucky" class="button">
+                    <input id="submit" type="submit" value="Google Image Search">
                 </div>
             </form>
         </div>

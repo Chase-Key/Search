@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            .pages {
+                color: black;
+                text-align: right;
+                padding: 5px;
+                padding-right: 20px;
+                padding-top: 5px;
+                margin-inline: 5px;
+                margin: 10px;
+            }
+            .image {
+                color: black;
+                font-family: system-ui;
+                text-decoration: none;
+                font-size: 90%;
+            }
+            .image:hover {
+                text-decoration: underline;
+            }
+            #form-heading {
+                color: rgb(214, 10, 10);
+                font-family: Arial;
+                font-weight: 30;
+                font-size: x-large;
+                margin-left: 30px;
+            }
+            h4 {
+                font-weight: lighter;
+                padding: 5px;
+                margin-left: 25px;
+            }
+            #submit {
+                color: white;
+                text-align: right;
+                padding: 10px;
+                margin-right: 20px;
+                
+            }
+            #submit-b {
+                text-align: center;
+                color: white;
+                background-color: rgb(75, 120, 255);
+                border: .5px solid blue;
+                border-radius: 3px;
+                width: 130px;
+                padding: 6px;
+                font-size: small;
+            }
+            #submit-b:hover {
+                background-color: rgb(73, 115, 243);
+            }
+            .input-label {
+                float: left;
+                text-align: left;
+                margin-left: 20px;
+                padding: auto;
+            }
+            .text-input {
+                text-align: right;
+                margin-right: 25px;
+                padding: 5px;
+            }
+            .l-a {
+                padding: 10px;
+            }
+            .a {
+                min-width: 70%;
+            }
+            .form {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="pages">
+            <a class="image" href="index.html">Basic Search</a> &nbsp &nbsp
+            <a class="image" href="image_search.html">Image Search</a>
+        </div>
+        <div class="form" style="border-bottom: 0.3px solid lightgrey;">
+            <h1 id="form-heading">Advanced Search</h1>
+        </div>
+        <div class="form" style="border-bottom: 0.3px solid lightgrey; padding-top: 5px;">
+            <form action="https://www.google.com/search">
+                <h3 style="font-weight: lighter; margin-left: 30px;">Find pages with...</h3>
+                <br>
+                <div class="input-label">
+                    <label class="l-a" for="text-a">all these words:</label>
+                </div>
+                <div class="text-input">
+                    <input class="a" id="text-a" type="text" name="as_q">
+                </div>
+                <br>
+                <div class="input-label">
+                    <label class="l-a" for="text-b">this exact word or phrase:</label>
+                </div>
+                <div class="text-input">
+                    <input class="a" id="text-b" type="text" name="as_epq">
+                </div>
+                <br>
+                <div class="input-label">
+                    <label class="l-a" for="text-b">any of these words:</label>
+                </div>
+                <div class="text-input">
+                    <input class="a" id="text-b" type="text" name="as_oq">
+                </div>
+                <br>
+                <div class="input-label">
+                    <label class="l-a" for="text-b">none of these words:</label>
+                </div>
+                <div class="text-input">
+                    <input class="a" id="text-b" type="text" name="as_eq">
+                </div>
+                <br>
+                <div id="submit">
+                    <input id="submit-b" type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
